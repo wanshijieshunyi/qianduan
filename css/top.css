@@ -1,0 +1,340 @@
+.top_container {
+    width: 100%;
+    background-color: #333;
+}
+
+.top_container .container {
+    margin: 0 auto;
+}
+
+.top_container .top_box {
+    height: 25px;
+    /* background-color: aqua; */
+    /* padding: 0 50px; */
+    line-height: 25px;
+    /* margin: 0 auto; */
+}
+
+.top_container .top_box .top_nav {
+    float: right;
+}
+
+.top_container .top_box .top_nav span {
+    display: inline-block;
+    height: 24px;
+    color: #ccc;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+
+/* 头部隐藏区域 */
+
+.top_container .top_group_text,
+.top_container .top_language_text {
+    width: 100%;
+    background-color: #fff;
+    padding: 50px 120px;
+}
+
+.top_container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.top_container ul li {
+    width: 20%;
+    padding-right: 50px;
+    /* height: ; */
+}
+
+.top_container .groupWeb li div {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.top_container .groupWeb li div:hover {
+    color: #333;
+}
+
+.top_container .groupWeb li p {
+    font-size: 14px;
+    color: #999;
+}
+
+.top_container h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.top_container .top_language_text li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+/* 菜单页 */
+
+.menus {
+    background-color: #fff;
+    width: 100%;
+    /* padding: 0 200px; */
+}
+
+.menu {
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    border-bottom: 1px solid #eee;
+}
+
+.fixedNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+
+/* 头部导航栏 */
+
+.scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
+}
+
+@media screen and (min-width:991px) {
+    .menu {
+        padding: 20px 70px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .menu {
+        padding: 20px 20px;
+    }
+}
+
+
+/* .menu .menu_mid {
+    margin-left: 100px;
+} */
+
+.menu .menu_r {
+    display: flex;
+    font-size: 17px;
+    margin-left: 25px;
+}
+
+.menu .logo_img {
+    width: 133px;
+    height: 30px;
+    background: url(../images/huawei_logo.png) no-repeat;
+    background-size: contain;
+}
+
+.menu .menu_mid span {
+    margin: 0 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* .menu .menu_mid .tab {
+    width: 100%;
+    height: 690px;
+    background-color: aqua;
+} */
+
+.menu .menu_r .buy {
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.menu .menu_r .buy .shopping {
+    display: none;
+}
+
+
+/* 菜单页隐藏区域 */
+
+.tab {
+    position: relative;
+    /* padding: 30px 100px; */
+}
+
+.tab .person_text,
+.tab .plan_text,
+.tab .service_text,
+.tab .cooperation_text,
+.tab .huawei_text {
+    /* display: none; */
+    position: absolute;
+    /* width: 100%; */
+    height: 550px;
+    top: 0;
+    left: -15px;
+    right: -15px;
+    padding: 0 100px;
+    color: #666;
+    z-index: 99;
+    background-color: #fff;
+}
+
+.tab .service_text,
+.tab .cooperation_text,
+.tab .huawei_text {
+    padding: 0 200px;
+}
+
+.tab .person_text {
+    padding: 30px 100px;
+}
+
+.tab .person_text_t {
+    display: flex;
+}
+
+.tab .person_text_t .phone {
+    flex: 2;
+    padding: 65px 50px 40px 0;
+}
+
+.tab .person_text_t .phone_img {
+    flex: 1;
+    padding: 30px;
+}
+
+.tab .person_text_t .phone ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.tab .person_text_t .phone ul li i {
+    font-size: 60px;
+    color: #666;
+}
+
+.tab .person_text_t .phone ul li p {
+    font-size: 18px;
+    color: #666;
+}
+
+.tab .person_text_t .phone_img img {
+    width: 100%;
+}
+
+.person_text .person_text_b span {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-right: 40px;
+}
+
+.person_text .person_text_b span i {
+    color: #c7000b;
+    font-size: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.person_text .person_text_b .error {
+    margin-left: 780px;
+}
+
+.tab .plan_text_top,
+.tab .service_text,
+.tab .cooperation_text,
+.tab .huawei_text {
+    display: flex;
+    padding: 30px 50px;
+    /* display: none; */
+}
+
+
+/* 显示隐藏类名 */
+
+.reveal {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.tab .plan_text div,
+.tab .service_text div,
+.tab .cooperation_text div,
+.tab .huawei_text div {
+    padding-right: 20px;
+}
+
+.tab .plan_text li,
+.tab .service_text li,
+.tab .cooperation_text li,
+.tab .huawei_text li {
+    margin-bottom: 12px;
+}
+
+.tab .plan_text .plan_text_one {
+    flex: 2.5;
+}
+
+.tab .plan_text .plan_text_two,
+.plan_text_three,
+.plan_text_four {
+    flex: 1;
+}
+
+.tab .plan_text h4,
+.tab .service_text h4,
+.tab .cooperation_text h4,
+.tab .huawei_text h4 {
+    color: #333;
+    font-size: 22px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.tab .plan_text .plan_text_b span {
+    margin-right: 30px;
+}
+
+.tab .service_text div,
+.cooperation_text div {
+    flex: 1;
+}
+
+.tab .huawei_text div {
+    flex: 1;
+}
+
+.tab .huawei_text div:nth-child(1) {
+    flex: 2;
+}
+
+.tab .huawei_text span {
+    display: block;
+}
+
+.tab .huawei_text span ul {
+    float: left;
+    margin-right: 130px;
+}
